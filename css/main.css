@@ -1,0 +1,40 @@
+li{
+    list-style: none;
+    float: left;
+}
+picture, img {
+    max-width: 90%;
+}
+img:hover{
+    box-shadow: 0px 0px 50px #000000;
+    z-index: 2;
+    -webkit-transition: all 0.25s ease-in;
+    -webkit-transform: scale(1.125);
+    -ms-transition: all 0.25s ease-in;
+    -ms-transform: scale(1.125);   
+    -moz-transition: all 0.25s ease-in;
+    -moz-transform: scale(1.125);
+    transition: all 0.25s ease-in;
+    transform: scale(1.125);
+}
+
+@media only screen and (max-width: 599px){
+    /*one column layout*/
+    li{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px){
+    /*two column layout*/
+    li{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1201px){
+    /*four column layout*/
+    li{
+        width: 25%;
+    }
+}
